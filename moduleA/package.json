@@ -1,13 +1,13 @@
 {
   "name": "@hxdms/a",
-  "version": "0.12.0-alpha.0",
+  "version": "0.12.0-alpha.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo 执行单元测试...",
     "preversion": "npm test",
     "version": "node index",
-    "postversion": "echo 将组件包推送至私有仓库"
+    "postversion": "echo 将组件包推送至私有仓库 && npm publish"
   },
   "publishConfig": {
     "access": "public"
