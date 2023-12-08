@@ -1,6 +1,7 @@
 const fs = require('fs');
 const child_process = require('child_process');
-const currentVersion = JSON.parse(fs.readFileSync('package.json')).version;
+const pkg = JSON.parse(fs.readFileSync('package.json'));
+const currentVersion = `${pkg.name}@${pkg.version}`;
 const gitCmd = `git add . && git commit -m "更新组件版本 v${currentVersion}" && git tag v${currentVersion} && git push --tags`;
 child_process.exec(gitCmd, (error, stdout, stderr) => {
   if (error) {
