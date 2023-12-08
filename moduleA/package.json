@@ -1,9 +1,11 @@
 {
   "name": "@hxdms/a",
-  "version": "0.11.54",
+  "version": "0.11.55",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "version": "node index"
+  },
   "publishConfig": {
     "access": "public"
   },
