@@ -1,6 +1,6 @@
 {
   "name": "@hxdms/a",
-  "version": "0.11.12-test.4",
+  "version": "0.11.14",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,9 @@
   },
   "keywords": [],
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:erichow/a.git"
+  },
   "license": "ISC"
 }
