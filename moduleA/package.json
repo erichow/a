@@ -1,12 +1,12 @@
 {
   "name": "@hxdms/a",
-  "version": "0.13.0-alpha.0",
+  "version": "0.15.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo 执行单元测试...",
     "#preversion": "npm test",
-    "version": "node ./build/git",
+    "#version": "node ./build/git",
     "#postversion": "npm publish"
   },
   "publishConfig": {
