@@ -1,13 +1,17 @@
 {
   "name": "@hxdms/a",
-  "version": "0.15.0",
+  "version": "0.15.1-DDM3514-SNAPSHOT.4",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "genver": "node ./build/genver",
+    "genver:local": "node ./build/genver -- DDM3514-SNAPSHOT",
+    "genver:dev": "node ./build/genver -- DEV-SNAPSHOT",
+    "genver:test": "node ./build/genver -- SNAPSHOT",
+    "genver:staging": "node ./build/genver -- RELEASE",
     "test": "echo 执行单元测试...",
     "#preversion": "npm test",
     "#version": "node ./build/git",
-    "tt": "node ./build/git",
     "#postversion": "npm publish"
   },
   "publishConfig": {
