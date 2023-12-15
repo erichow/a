@@ -1,0 +1,11 @@
+FROM artifactory.sanyevi.cn:8081/evicloud-docker-dev/newevi/nginx:1.0.0
+LABEL version="1.0.0" \
+      vendor="Sany.com"
+COPY --chown=nginx:nginx nginx.conf /etc/nginx/nginx.conf
+COPY --chown=nginx:nginx mime.types /etc/nginx/mime.types
+ 
+WORKDIR /opt/dms-lite-web-base/
+COPY --chown=nginx:nginx ./dist ./
+ 
+EXPOSE 8085
+CMD ["nginx", "-g", "daemon off;"]

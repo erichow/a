@@ -7,6 +7,7 @@
     "test": "echo 执行单元测试...",
     "#preversion": "npm test",
     "#version": "node ./build/git",
+    "tt": "node ./build/git",
     "#postversion": "npm publish"
   },
   "publishConfig": {
